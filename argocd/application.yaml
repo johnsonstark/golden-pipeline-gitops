@@ -6,7 +6,7 @@ metadata:
 spec:
     project: default
     source: 
-        repoURL: https://github.com/MY_REPO
+        repoURL: https://github.com/johnsonstark/golden-pipeline-gitops.git
         targetRevision: main
         path: gitops/app
     destination:
