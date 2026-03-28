@@ -17,7 +17,7 @@ spec:
     spec:
       containers: 
         - name: golden-app
-          image: docker.io/tanfulin/golden-pipeline-app:v0.1.0
+          image: docker.io/tanfulin/golden-pipeline-app:v0.1.1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
