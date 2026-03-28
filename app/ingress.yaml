@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: golden-app-ingress
+  namespace: default
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: <domain>
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service: golden-app-service
+              port:
+                number: 80
